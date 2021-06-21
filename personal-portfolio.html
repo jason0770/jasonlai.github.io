@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #welcome-section {
+        width: 100%;
+        height: 100vh;
+        background-color: #5995da;
+      }
+
+      #projects {
+        width: 100%;
+        height: 100vh;
+        background-color: #ff790e;
+      }
+
+      #contacts {
+        width: 100%;
+        height: 100vh;
+        background-color: #000000;
+      }
+
+      #navbar {
+        position: fixed;
+        display: inline-flex;
+        width: 100%;
+        height: 50px;
+        justify-content: space-evenly;
+        background-color: #09a7a1;
+        z-index: 3;
+      }
+
+      #navbar ul{
+        display: inline-flex;
+        justify-content: space-between;
+        list-style-type: none;
+      }
+
+      #navbar li{
+        margin-right: 20px;
+      }
+
+      #navbar h1 {
+        font-family: sans-serif;
+        display: flex;
+        align-self: center;
+        color: #FFFFFF;
+      }
+
+      #welcome-section h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 80px;
+        font-family: Helvetica;
+          color: #FFFFFF;
+      }
+
+      #navbar ul {
+        display: flex;
+        align-self: center;
+        font-family: sans-serif;
+      }
+
+      #navbar ul li {
+        font-size: 20px;
+      }
+
+      #navbar ul li a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+
+      #project-tiles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 70%;
+        background-color: #ff790e;
+        flex-wrap: wrap;
+        margin: 0 auto;
+      }
+
+      .project-tile {
+        width: 304px;
+        height: 250px;
+        background-color: #66c2ff;
+        border: 2px #FFFFFF solid;
+        margin: 20px;
+      }
+
+      .project-tile p {
+          text-align: center;
+          margin-top: 4px;
+          font-size: 25px;
+          font-family: Helvetica;
+      }
+
+      .project-tile a {
+          color: black;
+          text-decoration: none;
+      }
+
+      .project-tile a:hover {
+          color: #09a73e;
+      }
+
+      .project-tile a img {
+          margin: 0 auto;
+          display: block;
+      }
+
+      .profile-link {
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -55px;
+        background-color: #ff790e;
+        text-align: center;
+        padding-bottom: 15px;
+      }
+
+      .profile-link button {
+          background-color: #09a7a1;
+          color: #FFFFFF;
+          border: 1px #FFFFFF solid;
+          width: 100px;
+          height: 50px;
+      }
+
+      .profile-link button:hover {
+          background-color: #bae380;
+      }
+
+      #contacts-links {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 40px;
+          margin-right: 30px;
+          color: #FFFFFF;
+      }
+
+      #contacts-links a{
+          color: #FFFFFF;
+          text-decoration: none;
+      }
+
+      #contacts p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #FFFFFF;
+          font-size: 70px;
+      }
+
+      #contacts {
+          display: grid;
+      }
+
+      /* Mobile Styles */
+      @media only screen and (min-width: 972px) and (max-width:1457px) {
+        #projects, #project-tiles {
+          height: 115vh;
+        }
+
+        .profile-link {
+          position: relative;
+          top: -15px;
+        }
+
+        #contacts {
+          position: relative;
+          top: 40px;
+        }
+
+      }
+
+      /* Tablet Styles */
+      @media only screen and (max-width: 971px) {
+        #projects, #project-tiles {
+          height: 230vh;
+        }
+
+        .profile-link {
+          position: relative;
+          top: -20px;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+      <h1>Jason Lai</h1>
+      <div> </div>
+      <div> </div>
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </div>
+
+    <div id="welcome-section">
+      <h1>Hey, I am Jason Lai!</h1>
+    </div>
+
+    <div id="projects">
+      <div id="project-tiles">
+          <div class="project-tile">
+              <a href="https://codepen.io/jason0770/full/jOBVqqq">
+<!--                  <h2>Responsive Project 1</h2>-->
+<!--                  <img width="200px" height="200px" src="https://lh3.googleusercontent.com/proxy/gVA1kFWWxzPsf3s5LejTKj3Z_qwdKEH1y_j8gxr3ZP5uNWeFr5pxsE6io9dqYZG8qT4QK9f-Jc2H3IKt1U9-_YGsxS7JGC2dipoogM-9Sur3Xg">-->
+
+                <img width="300px" height="200px" src="images/Project1-Tribute.png">
+                <p>Tribute</p>
+              </a>
+          </div>
+
+          <div class="project-tile">
+              <a href="https://codepen.io/jason0770/full/rNyWRWZ">
+<!--                  <h2>Responsive Project 2</h2>-->
+<!--                  <img width="200px" height="200px" src="https://lh3.googleusercontent.com/proxy/gVA1kFWWxzPsf3s5LejTKj3Z_qwdKEH1y_j8gxr3ZP5uNWeFr5pxsE6io9dqYZG8qT4QK9f-Jc2H3IKt1U9-_YGsxS7JGC2dipoogM-9Sur3Xg">-->
+                <img width="300px" height="200px" src="images/Project2-Form.png">
+                <p>Survey Form</p>
+              </a>
+          </div>
+
+          <div class="project-tile">
+              <a href="https://codepen.io/jason0770/full/zYZyXMz">
+<!--                  <h2>Responsive Project 3</h2>-->
+<!--                  <img width="200px" height="200px" src="https://lh3.googleusercontent.com/proxy/gVA1kFWWxzPsf3s5LejTKj3Z_qwdKEH1y_j8gxr3ZP5uNWeFr5pxsE6io9dqYZG8qT4QK9f-Jc2H3IKt1U9-_YGsxS7JGC2dipoogM-9Sur3Xg">-->
+
+                <img width="300px" height="200px" src="images/Project3-ProductLanding.png">
+                <p>Product Landing</p>
+              </a>
+          </div>
+
+          <div class="project-tile">
+              <a href="https://codepen.io/jason0770/full/wvJZoqb">
+<!--                  <h2>Responsive Project 4</h2>-->
+<!--                  <img width="200px" height="200px" src="https://lh3.googleusercontent.com/proxy/gVA1kFWWxzPsf3s5LejTKj3Z_qwdKEH1y_j8gxr3ZP5uNWeFr5pxsE6io9dqYZG8qT4QK9f-Jc2H3IKt1U9-_YGsxS7JGC2dipoogM-9Sur3Xg">-->
+                <img width="300px" height="200px" src="images/Project4-TechnicalDoc.png">
+                <p>Technical Documentation</p>
+              </a>
+          </div>
+        <div class="project-tile">
+        </div>
+        <div class="project-tile">
+        </div>
+      </div>
+        <div class="profile-link"><a href="https://codepen.io/jason0770/"><button>More</button></a></div>
+    </div>
+
+    <div id="contacts">
+        <p>Contact me</p>
+        <div id="contacts-links">
+            <a href="https://github.com/jason0770" target="_blank">GitHub</a>
+            <a href="https://codepen.io/jason0770/">CodePen</a>
+            <a href="mailto:lj.jasonlai@gmail.com">Email</a>
+            <a href="https://replit.com/@jason0770">Replit</a>
+        </div>
+    </div>
+
+</body>
+</html>
